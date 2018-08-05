@@ -6,7 +6,7 @@ var sampleConversation = [
     "How long does Facebook retain my data?",
     "Does Facebook share my information with the police?",
     "How do you share my data?",
-    "Bye"
+    "Yeah that was clear, probably less likely Bye"
 ];
 var config = {
     botName: "Abbott:",
@@ -31,11 +31,17 @@ ChatBot.addPattern(
     undefined,
     "Say 'Hi' to be greeted back."
 );
-
+ChatBot.addPattern(
+    "Yeah that was clear, probably less likely Bye",
+    "response",
+    "See you later",
+    undefined,
+    "Say 'Bye' to end the conversation."
+);
 ChatBot.addPattern(
     "^bye$",
     "response",
-    "See you later buddy",
+    "See you later",
     undefined,
     "Say 'Bye' to end the conversation."
 );
@@ -85,7 +91,7 @@ ChatBot.addPattern(
 ChatBot.addPattern(
     "(what is the )? share my data|posts?",
     "response",
-    "Facebook shares information globally, both within Facebook and to external partners in accordance with Facebook's policy. These data transfers are necessary to provide our services. We use standard contract clauses, rely on the European Commission’s adequacy decisions about certain countries, and obtain your consent for these data transfers.",
+    "Facebook shares information globally, both within Facebook and to external partners in accordance with Facebook's policy. These data transfers are necessary to provide our services. We use standard contract clauses, rely on the European Commission’s adequacy decisions about certain countries, and obtain your consent for these data transfers. <br><br> Was my explanation clear? <br><br> Does that make you any less likely to use Facebook?",
     undefined,
     "Say 'How do you share my data?"
 );

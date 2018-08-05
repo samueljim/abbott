@@ -9,6 +9,13 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    background-image: url("../mobile.PNG");
+  }
 }
 
 .origin {
@@ -16,7 +23,7 @@ html {
 }
 
 #chatbox {
-  width: 30%;
+  width: 50%;
   min-width: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -158,6 +165,17 @@ html {
   /* background-color: #0084FF; */
 }
 
+@media screen and (max-width: 1000px) {
+  #chat {
+    right: 0;
+    bottom: 10em;
+    left: 5em;
+  }
+  #chatbox {
+    width: 75%;
+  }
+}
+
 #chat:before {
   border-width: 10px 11px 0 0;
   border-color: #A8A8A8 transparent transparent;
@@ -209,7 +227,7 @@ html {
 
 #chatbox1 {
   width: 100%;
-  height: 650px;
+  height: 620px;
   /*overflow: hidden;*/
   margin: auto;
   padding: 0;
@@ -217,7 +235,7 @@ html {
 
 #chatbox2 {
   width: 100%;
-  height: 600px;
+  height: 570px;
   margin: auto;
   padding: 0;
   border: 0;
@@ -336,4 +354,20 @@ button i {
     -webkit-transform: scale(1.1);
     transform: scale(1.1)
   }
+}
+
+.bot {
+  /*border: 4px solid rgba(0, 132, 60, 0.2);*/
+  background-color: rgba(177, 190, 115, 0.11);
+  direction: ltr !important;
+  padding: 10px;
+  /* font-size: 75% */
+}
+
+.human {
+  /*border: 4px solid rgba(38, 159, 202, 0.2);*/
+  background-color: rgba(150, 202, 223, 0.11);
+  direction: rtl !important;
+  padding: 10px;
+  /* font-size: 75% */
 }
