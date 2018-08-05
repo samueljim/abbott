@@ -18,7 +18,7 @@ function minimChatbox() {
     var e = document.getElementById("maxi-chat");
     e.style.display = "block";
     var e = document.getElementById("chatbox");
-    e.style.margin = "0 0 -445px 0";
+    e.style.margin = "0 0 -568px 0";
 }
 
 function scrollToBottom() {
