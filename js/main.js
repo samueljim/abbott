@@ -114,7 +114,7 @@ ChatBot.addPattern(
 ChatBot.addPattern(
     "(what is the )?onion",
     "response",
-    "Yes <img src='https://cdn.newsapi.com.au/image/v1/146a281ac01ff46bcf53940c6fe85c99'/>",
+    "Yes <img src='https://cdn.newsapi.com.au/image/v1/146a281ac01ff46bcf53940c6fe85c99' width='100%'/>",
     undefined
 );
 ChatBot.addPattern(
