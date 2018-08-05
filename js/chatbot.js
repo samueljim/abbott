@@ -284,6 +284,8 @@ var ChatBot = function () {
             if (addChatEntryCallback != undefined) {
                 addChatEntryCallback.call(this, entryDiv, text, origin);
             }
+
+            scrollToBottom();
         },
         thinking: function (on) {
             var ti = $('#chatBotThinkingIndicator');

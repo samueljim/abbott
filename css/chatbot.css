@@ -55,6 +55,14 @@
     font-size: 16px;
 }
 
+#chatBotHistory{
+    
+}
+
+.chatbox2{
+    overflow: scroll;
+}
+
 .chatBotChatEntry .imgBox img {
     width: 100%;
 }

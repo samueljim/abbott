@@ -20,3 +20,8 @@ function minimChatbox() {
     var e = document.getElementById("chatbox");
     e.style.margin = "0 0 -445px 0";
 }
+
+function scrollToBottom(){
+    var chatBotHistory = document.getElementById("chatBotHistory");
+    chatBotHistory.scrollTop = chatBotHistory.scrollHeight;
+  }
