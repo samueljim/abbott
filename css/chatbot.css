@@ -60,7 +60,7 @@
 }
 
 .chatbox2{
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 
 .chatBotChatEntry .imgBox img {
