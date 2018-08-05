@@ -21,12 +21,13 @@ function minimChatbox() {
     e.style.margin = "0 0 -445px 0";
 }
 
-function scrollToBottom(){
+function scrollToBottom() {
     var chatboxDiv = document.getElementById("chatBotHistory");
 
     var shouldScroll = chatboxDiv.scrollTop + chatboxDiv.clientHeight === chatboxDiv.scrollHeight;
 
     if (!shouldScroll) {
         chatboxDiv.scrollTop = chatboxDiv.scrollHeight;
-    }    
-  }
+    }
+    $('#scroll').scrollTop(1000000);
+}

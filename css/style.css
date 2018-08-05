@@ -4,6 +4,13 @@
   margin-bottom: 20px;
 }
 
+html {
+  background-image: url("../background.PNG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
 .origin {
   padding-right: 10px;
 }
@@ -13,7 +20,6 @@
   min-width: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #E9EEF4;
 }
 
@@ -141,12 +147,15 @@
   width: 100px;
   height: 75px;
   border-radius: 3px;
-  padding: 2px 8px;
+  /* padding: 2px 8px; */
   font-size: 12px;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  border-radius: 20px;
-  background-color: #0084FF;
+  position: fixed;
+  right: 5em;
+  bottom: 20em;
+  color: rgb(51, 51, 51);
+  /* background-color: #0084FF; */
 }
 
 #chat:before {

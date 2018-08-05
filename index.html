@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>abbott The Privacy Chatbot</title>
+  <title>Facebook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
@@ -11,12 +11,15 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
   <script src="./js/chatbot.js"></script>
-</head> 
+  <link rel="icon" type="image/png" href="logo.png" />
+
+</head>
 
 <body>
   <div id="chatBoxContainer">
     <div id="chatBotCommandDescription"></div>
     <div id="chat" class="animated-chat tada" onclick="loadChatbox()">
+      <img src="logo.png" alt="abbott" width="100%">
       <p>Ask Me About Privacy</p>
     </div>
     <div class="chatbox" id="chatbox">
@@ -29,6 +32,10 @@
           <div id="chatBotHistory">
             <!-- Chat goes here -->
           </div>
+
+          <div id="bottom">
+          </div>
+
           <div style="clear: both;">&nbsp;</div>
           <div id="chatBotThinkingIndicator"></div>
           <div id="text-input">

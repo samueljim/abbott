@@ -278,14 +278,15 @@ var ChatBot = function () {
             if (text == '') {
                 text = 'Sorry, I have no idea.';
             }
-            var entryDiv = $('<div class="chatBotChatEntry ' + origin + '"></div>');
-            entryDiv.html('<span class="origin">' + (origin == 'bot' ? botName : humanName) + '</span>' + text);
+            var entryDiv = $('<div class="human chatBotChatEntry ' + origin + '"></div>');
+            entryDiv.html('<span class="bot origin">' + (origin == 'bot' ? botName : humanName) + '</span>' + text);
             $('#chatBotHistory').append(entryDiv);
             if (addChatEntryCallback != undefined) {
                 addChatEntryCallback.call(this, entryDiv, text, origin);
             }
+            location.href = "#bottom";
 
-            scrollToBottom();
+            // scrollToBottom();
         },
         thinking: function (on) {
             var ti = $('#chatBotThinkingIndicator');
