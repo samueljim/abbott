@@ -42,10 +42,9 @@
           <div id="text-input">
             <input id="humanInput" type="text" placeholder="Say something" />
             <div class="right">
-              <button onclick="if (!ChatBot.playConversation(sampleConversation,4000)) {alert('conversation already running');};" id="submitInput">
-                <i class="fas fa-paper-plane"></i>
+              <button onclick="if (!ChatBot.playConversation(sampleConversation,4000)) {alert('conversation already running');};" id="submitInput">Demo<i class="far fa-play-circle"></i> 
               </button>
-              <!-- <div style="clear: both;">&nbsp;</div> -->
+                <div style="clear: both;">&nbsp;</div>
             </div>
           </div>
 
@@ -56,9 +55,11 @@
         //document.write('<div id="chatbox1" style="width: 280px; height: 450px; overflow: hidden; margin: auto; padding: 0;">');
         //document.write('<div id="chatbox2" style="width: 280px; height: 450px; overflow: hidden; margin: auto; padding: 0; border:0; ">');
         //document.write('<p>test text</p></div></div>');
-      </script>
+        </script>
 
       <div id="close-chat" onclick="closeChatbox()">&times;</div>
+
+      
       <div id="minim-chat" onclick="minimChatbox()">
         <span class="minim-button">&minus;</span>
       </div>

@@ -172,10 +172,11 @@ var ChatBot = function () {
                             // no direct answer? tell about related topics then
                             if (content == '' && data.RelatedTopics.length > 0) {
 
-                                content = '<p>I found multiple answers for you:</p>';
+                                // content = '<p>I found multiple answers for you:</p>';
+                                content = '';
 
                                 var media = [];
-                                for (var i = 0; i < data.RelatedTopics.length; i++) {
+                                for (var i = 0; i < 1; i++) {
                                     var ob = data.RelatedTopics[i];
                                     if (ob.Result == undefined) {
                                         continue;
