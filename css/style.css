@@ -227,7 +227,7 @@ html {
 
 #chatbox1 {
   width: 100%;
-  height: 620px;
+  height: 570px;
   /*overflow: hidden;*/
   margin: auto;
   padding: 0;
@@ -235,7 +235,7 @@ html {
 
 #chatbox2 {
   width: 100%;
-  height: 570px;
+  height: 520px;
   margin: auto;
   padding: 0;
   border: 0;
